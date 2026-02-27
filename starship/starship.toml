@@ -1,51 +1,211 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-format = """$all $fill $cmd_duration
-$character"""
 
-add_newline = false
+[aws]
+symbol = " "
+disabled = true
 
-[character]
-success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
+[buf]
+symbol = " "
 
-[cmd_duration]
-min_time = 10
-show_milliseconds = true
-format = "[$duration](bright-black)"
+[bun]
+symbol = " "
 
-[fill]
-symbol = ' '
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+truncation_length = 10
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fortran]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
 
 [golang]
-symbol = " "
+symbol = " "
+
+[gradle]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+disabled = true
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
 
 [nodejs]
-detect_extensions = []
+symbol = " "
 
-[git_metrics]
-disabled = false
-format = '(([ $added ]($added_style))([ $deleted ]($deleted_style)))'
-only_nonzero_diffs = true
-added_style = 'green'
-deleted_style = 'red'
+[ocaml]
+symbol = " "
 
-[line_break]
-disabled = true
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[status]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[xmake]
+symbol = " "
+
+[zig]
+symbol = " "
 
 [jobs]
 disabled = true
-
-[battery]
-disabled = true
-
-[env_var.SOFTWARE_UPDATE_AVAILABLE]
-variable = 'SOFTWARE_UPDATE_AVAILABLE'
-format = '[$env_value]($style)'
-default = ''
-style = 'cyan'
-
-[env_var.DOTFILES_UPDATE_AVAILABLE]
-variable = 'DOTFILES_UPDATE_AVAILABLE'
-format = '[$env_value]($style)'
-default = ''
-style = 'cyan'
