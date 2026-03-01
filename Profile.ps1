@@ -341,6 +341,9 @@ Set-PSReadLineOption -PredictionViewStyle InlineView
 Set-PSReadLineKeyHandler -Function AcceptSuggestion -Key Alt+l
 Import-Module -Name CompletionPredictor
 
+Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+
 # Skip fastfetch for non-interactive shells
 if ([Environment]::GetCommandLineArgs().Contains("-NonInteractive")) {
     return
