@@ -29,7 +29,7 @@
             "keys": "alt+shift+d"
         }
     ],
-    "launchMode": "focus",
+    "launchMode": "default",
     "newTabMenu": 
     [
         {

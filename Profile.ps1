@@ -24,8 +24,6 @@ Set-Alias -Name tif Show-ThisIsFine
 Set-Alias -Name touch -Value New-File
 Set-Alias -Name up -Value Update-Profile
 Set-Alias -Name us -Value Update-Software
-Set-Alias -Name vi -Value nvim
-Set-Alias -Name vim -Value nvim
 Set-Alias -Name which -Value Show-Command
 
 
@@ -343,9 +341,4 @@ Import-Module -Name CompletionPredictor
 
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-
-# Skip fastfetch for non-interactive shells
-if ([Environment]::GetCommandLineArgs().Contains("-NonInteractive")) {
-    return
-}
 

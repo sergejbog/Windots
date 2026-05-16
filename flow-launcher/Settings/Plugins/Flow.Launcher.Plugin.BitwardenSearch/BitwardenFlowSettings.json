@@ -1,0 +1,20 @@
+{
+  "BwExecutablePath": "",
+  "ClientId": "",
+  "SessionKey": "",
+  "LogTrace": false,
+  "LogDebug": false,
+  "LogInfo": false,
+  "LogWarning": true,
+  "LogError": true,
+  "AutoLockDuration": 0,
+  "NotifyOnPasswordCopy": false,
+  "NotifyOnUsernameCopy": false,
+  "NotifyOnUriCopy": false,
+  "NotifyOnTotpCopy": true,
+  "NotifyOnSyncStart": true,
+  "NotifyOnIconCacheStart": true,
+  "NotifyOnSyncComplete": true,
+  "ClipboardClearSeconds": 0,
+  "IsPathEnvironmentValid": false
+}

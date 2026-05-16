@@ -1,0 +1,9 @@
+{
+  "destination_separators": "and \u0026 ,",
+  "input_cur": "EUR",
+  "output_cur": "USD MKD",
+  "separators": "to in :",
+  "update_freq": "daily",
+  "app_id": "",
+  "aliases": "EUR = euro euros\nusd = dollar dollars $ bucks"
+}

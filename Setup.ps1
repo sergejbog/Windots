@@ -13,9 +13,6 @@
 # Linked Files (Destination => Source)
 $symlinks = @{
     $PROFILE.CurrentUserAllHosts                                                                    = ".\Profile.ps1"
-    "$HOME\AppData\Local\nvim"                                                                      = ".\nvim"
-    "$HOME\AppData\Local\fastfetch"                                                                 = ".\fastfetch"
-    "$HOME\AppData\Local\k9s"                                                                       = ".\k9s"
     "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = ".\windowsterminal\settings.json"
     "$HOME\.gitconfig"                                                                              = ".\.gitconfig"
     "$HOME\AppData\Roaming\lazygit"                                                                 = ".\lazygit"
@@ -28,17 +25,17 @@ $wingetDeps = @(
     "chocolatey.chocolatey"
     "eza-community.eza"
     "ezwinports.make"
-    "fastfetch-cli.fastfetch"
     "git.git"
     "github.cli"
     "kitware.cmake"
     "mbuilov.sed"
     "microsoft.powershell"
-    "neovim.neovim"
     "openjs.nodejs"
     "sst.opencode"
     "starship.starship"
     "task.task"
+    "voidtools.Everything"
+    "Flow Launcher"
 )
 $chocoDeps = @(
     "altsnap"
@@ -91,11 +88,6 @@ foreach ($psModule in $psModules) {
     if (!(Get-Module -ListAvailable -Name $psModule)) {
         Install-Module -Name $psModule -Force -AcceptLicense -Scope CurrentUser
     }
-}
-
-# Delete OOTB Nvim Shortcuts (including QT)
-if (Test-Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\") {
-    Remove-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\" -Recurse -Force
 }
 
 # Persist Environment Variables
