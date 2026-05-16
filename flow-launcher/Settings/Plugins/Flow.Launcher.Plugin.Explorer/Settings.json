@@ -4,7 +4,7 @@
   "IndexSearchExcludedSubdirectoryPaths": [],
   "EditorPath": "",
   "FolderEditorPath": "",
-  "ShellPath": "cmd",
+  "ShellPath": "pwsh",
   "ExcludedFileTypes": "",
   "UseLocationAsWorkingDir": false,
   "ShowInlinedWindowsContextMenu": false,
@@ -38,7 +38,7 @@
   "ContentSearchEngine": 0,
   "EverythingInstalledPath": "C:\\Program Files\\Everything\\Everything.exe",
   "SortOption": 1,
-  "EnableEverythingContentSearch": false,
+  "EnableEverythingContentSearch": true,
   "EverythingEnabled": true,
   "EverythingSearchFullPath": false,
   "EverythingEnableRunCount": true

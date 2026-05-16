@@ -1,9 +1,11 @@
 [
-  {
-    "Keyword": "fmhy",
-    "Title": "freemediaheckyeah",
-    "Url": "https://fmhy.net/",
-    "IconPath": "https://fmhy.net/fmhy.ico",
-    "AddToBulkOpenUrls": false
-  }
+   {
+      "Keyword": "fmhy",
+      "Title": "freemediaheckyeah",
+      "Url": "https://fmhy.net/",
+      "IsPrivateMode": false,
+      "Delimiter": "-",
+      "IconPath": "https://fmhy.net/fmhy.ico",
+      "AddToBulkOpenUrls": false
+   }
 ]
